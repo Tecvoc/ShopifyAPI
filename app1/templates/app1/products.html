@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title> Products </title>
+    </head>
+    <body>
+        <h2>Products are </h2>
+        <form method="post" action="{% url 'order' %}">
+            {% csrf_token %}
+            {{ products }}
+        </form>
+ 
+        {{ myvar }}
+    </body>
+</html>
